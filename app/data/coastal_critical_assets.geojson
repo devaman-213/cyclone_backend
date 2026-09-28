@@ -1,0 +1,303 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sub_puri_01",
+        "name": "Puri Coastal 220kV Grid Substation",
+        "type": "substation",
+        "voltage_kv": 220,
+        "criticality": "CRITICAL",
+        "elevation_m": 4.2,
+        "backup_power": true,
+        "households_served": 145000
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.8312, 19.8134]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sub_paradip_02",
+        "name": "Paradip Port Industrial Transmission Substation",
+        "type": "substation",
+        "voltage_kv": 400,
+        "criticality": "HIGH",
+        "elevation_m": 2.8,
+        "backup_power": true,
+        "households_served": 230000
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [86.6114, 20.2645]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sub_gopalpur_03",
+        "name": "Gopalpur Port 132kV Substation",
+        "type": "substation",
+        "voltage_kv": 132,
+        "criticality": "MEDIUM",
+        "elevation_m": 5.1,
+        "backup_power": false,
+        "households_served": 65000
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [84.9082, 19.2612]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sub_chandipur_04",
+        "name": "Chandipur Coastal Feeder Substation",
+        "type": "substation",
+        "voltage_kv": 132,
+        "criticality": "HIGH",
+        "elevation_m": 3.4,
+        "backup_power": false,
+        "households_served": 89000
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [87.0215, 21.4651]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sub_kalingapatnam_05",
+        "name": "Kalingapatnam North AP Substation",
+        "type": "substation",
+        "voltage_kv": 132,
+        "criticality": "MEDIUM",
+        "elevation_m": 3.9,
+        "backup_power": false,
+        "households_served": 54000
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [84.1287, 18.3374]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "shl_puri_district_01",
+        "name": "Puri District Multi-Purpose Disaster Cyclone Shelter",
+        "type": "shelter",
+        "capacity_persons": 3500,
+        "current_occupancy": 1200,
+        "medical_facilities": true,
+        "elevation_m": 6.8,
+        "connected_route_id": "nh_316_coastal"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [85.8175, 19.8055]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "shl_astarang_02",
+        "name": "Astaranga Coastal High School Cyclone Shelter",
+        "type": "shelter",
+        "capacity_persons": 2200,
+        "current_occupancy": 850,
+        "medical_facilities": false,
+        "elevation_m": 3.1,
+        "connected_route_id": "sh_60_astarang"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [86.2731, 19.9821]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "shl_kendrapara_03",
+        "name": "Rajnagar Mangrove Buffer Relief Center",
+        "type": "shelter",
+        "capacity_persons": 4000,
+        "current_occupancy": 2100,
+        "medical_facilities": true,
+        "elevation_m": 2.5,
+        "connected_route_id": "sh_9_kendrapara"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [86.7542, 20.5789]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "shl_dhamra_04",
+        "name": "Dhamra Port Community Safe Haven",
+        "type": "shelter",
+        "capacity_persons": 2800,
+        "current_occupancy": 600,
+        "medical_facilities": true,
+        "elevation_m": 4.5,
+        "connected_route_id": "nh_5a_paradip"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [86.9582, 20.8123]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "shl_chhatrapur_05",
+        "name": "Chhatrapur Ganjam Coastal Shelter",
+        "type": "shelter",
+        "capacity_persons": 3100,
+        "current_occupancy": 400,
+        "medical_facilities": true,
+        "elevation_m": 7.2,
+        "connected_route_id": "nh_16_corridor"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [84.9912, 19.3541]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "nh_316_coastal",
+        "name": "NH-316 Puri-Bhubaneswar Expressway Coastal Sector",
+        "type": "highway",
+        "lanes": 4,
+        "critical_evacuation_corridor": true,
+        "surface_elevation_m": 3.8,
+        "length_km": 42.5
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [85.8242, 19.8021],
+          [85.8361, 19.8452],
+          [85.8521, 19.9213],
+          [85.8321, 20.0451],
+          [85.8142, 20.2412]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "nh_5a_paradip",
+        "name": "NH-5A Chandikhole-Paradip Port Freight Corridor",
+        "type": "highway",
+        "lanes": 4,
+        "critical_evacuation_corridor": true,
+        "surface_elevation_m": 2.9,
+        "length_km": 54.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [86.6021, 20.2589],
+          [86.5123, 20.3412],
+          [86.3214, 20.4891],
+          [86.1451, 20.6214]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sh_60_astarang",
+        "name": "SH-60 Coastal Access Arterial to Astaranga",
+        "type": "highway",
+        "lanes": 2,
+        "critical_evacuation_corridor": true,
+        "surface_elevation_m": 2.2,
+        "length_km": 28.3
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [86.2711, 19.9798],
+          [86.2114, 20.0341],
+          [86.1145, 20.1215],
+          [86.0125, 20.1892]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sh_9_kendrapara",
+        "name": "SH-9 Cuttack-Rajnagar Estuary Highway",
+        "type": "highway",
+        "lanes": 2,
+        "critical_evacuation_corridor": true,
+        "surface_elevation_m": 2.4,
+        "length_km": 68.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [86.7512, 20.5741],
+          [86.6214, 20.5213],
+          [86.4215, 20.4912],
+          [86.1821, 20.4715],
+          [85.8912, 20.4623]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "nh_16_corridor",
+        "name": "NH-16 Eastern Coastal Trunk Corridor (Ganjam Segment)",
+        "type": "highway",
+        "lanes": 6,
+        "critical_evacuation_corridor": true,
+        "surface_elevation_m": 6.5,
+        "length_km": 85.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [84.8812, 19.2312],
+          [84.9814, 19.3415],
+          [85.1214, 19.5124],
+          [85.3412, 19.7891],
+          [85.6214, 20.0412]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "hvl_puri_paradip_400kv",
+        "name": "400kV Puri-Paradip Grid Intertie",
+        "type": "power_line",
+        "voltage_kv": 400,
+        "criticality": "HIGH",
+        "pylon_count": 182
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [85.8312, 19.8134],
+          [86.0412, 19.9812],
+          [86.3214, 20.1412],
+          [86.6114, 20.2645]
+        ]
+      }
+    }
+  ]
+}
