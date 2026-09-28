@@ -167,21 +167,37 @@ def generate_speech_audio(request: TTSRequest):
             raise HTTPException(status_code=501, detail="gTTS module not installed in current python environment.")
 
         lang_map = {
-            "odia": "hi", # Fallback to clear Hindi for Odia if direct Odia voice unavailable
+            "odia": "hi",
+            "oriya": "hi",
             "bengali": "bn",
+            "bangla": "bn",
             "telugu": "te",
+            "tamil": "ta",
             "hindi": "hi",
             "english": "en"
         }
         
         target_lang = "hi"
         req_lang_lower = request.language_code.lower()
-        for k, v in lang_map.items():
-            if k in req_lang_lower:
-                target_lang = v
-                break
-        if target_lang == "hi" and "en" in req_lang_lower:
+        
+        # Exact/partial check
+        if "english" in req_lang_lower or req_lang_lower == "en":
             target_lang = "en"
+        elif "telugu" in req_lang_lower or "te" == req_lang_lower:
+            target_lang = "te"
+        elif "bengali" in req_lang_lower or "bangla" in req_lang_lower or "bn" == req_lang_lower:
+            target_lang = "bn"
+        elif "tamil" in req_lang_lower or "ta" == req_lang_lower:
+            target_lang = "ta"
+        elif "odia" in req_lang_lower or "oriya" in req_lang_lower or "or" == req_lang_lower:
+            target_lang = "hi"
+        elif "hindi" in req_lang_lower or "hi" == req_lang_lower:
+            target_lang = "hi"
+        else:
+            for k, v in lang_map.items():
+                if k in req_lang_lower:
+                    target_lang = v
+                    break
 
         clean_text = request.text.strip().strip('"').strip("'").strip()
         if not clean_text:
